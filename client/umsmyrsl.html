@@ -3,95 +3,46 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
         <link rel="stylesheet" href="main.css" />
         <title>Lúxusskrímslið</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Lúxusskrímslið</a>
-                    </li>
-                    <li>
-                        <a href="./ferlid.html">Ferlið & myndir</a>
-                    </li>
-                    <li>
-                        <a href="./umsmyrsl.html">Upprunasaga</a>
-                    </li>
-                    <li>
-                        <a selected>Um Smyrsl</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="container">
-            <h2>Um Smyrsl</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-                aperiam fugiat, exercitationem repudiandae nihil quos quisquam
-                non suscipit in enim officiis possimus iste voluptatibus
-                sapiente. Repellat at neque dolorem iusto!
-            </p>
-            <p>
-                um helga
-            </p>
-            <p>
-                um jökul
-            </p>
-            <h4>Skrímslaslökunartónlist</h4>
-            <iframe
-                width="100%"
-                height="100"
-                scrolling="no"
-                frameborder="no"
-                allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/13197800&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <div
-                style="
-                    font-size: 10px;
-                    color: #cccccc;
-                    line-break: anywhere;
-                    word-break: normal;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                        Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                    font-weight: 100;
-                "
-            >
-                <a
-                    href="https://soundcloud.com/funkcookie"
-                    title="bruva lova"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none;"
-                    >bruva lova</a
-                >
-                ·
-                <a
-                    href="https://soundcloud.com/funkcookie/sets/based"
-                    title="based"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none;"
-                    >based</a
-                >
+        <div id="insert-header"></div>
+        <main>
+            <div class="container">
+                <h2>Um Smyrsl</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae aperiam fugiat, exercitationem repudiandae nihil quos
+                    quisquam non suscipit in enim officiis possimus iste
+                    voluptatibus sapiente. Repellat at neque dolorem iusto!
+                </p>
+                <p>
+                    um helga
+                </p>
+                <p>
+                    um jökul
+                </p>
+                <div id="insert-soundcloud"></div>
             </div>
-        </div>
-        <footer>
-            <span>Listahópurinn smyrsl</span>
-            <br />
-            <span>
-                IG:
-                <a href="https://www.instagram.com/smyrsllist/">@smyrsllist</a>
-            </span>
-            <br />
-            <span>
-                smyrsl@gmail.com
-            </span>
-            <br />
-            <span>2020</span>
-        </footer>
+        </main>
+        <div id="insert-footer"></div>
     </body>
+    <script src="header.js"></script>
+    <script src="soundcloud.js"></script>
+    <script src="footer.js"></script>
+    <script type="text/JavaScript" src="script.js"></script>
 </html>

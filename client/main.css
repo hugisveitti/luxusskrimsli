@@ -7,60 +7,44 @@ html {
 }
 
 body {
-    min-height: 100%;
-
-    padding-bottom: 80px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-header {
-    height: 35px;
-}
-
-header a {
-    vertical-align: middle;
+main {
+    flex: 1 0 auto;
 }
 
 .container {
-    min-height: 100%;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 80px; /* Height of the footer */
-    background: beige;
+    background: #f0f4c3 !important;
     text-align: center;
-    padding-top: 10px;
+    color: black !important;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: bisque;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    display: block;
+.nav-wrapper {
+    background-color: #f0f4c3;
     color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: burlywood;
+.nav-wrapper a {
+    color: black;
 }
 
 nav ul li a[selected] {
-    background-color: cornsilk;
+    background-color: #e6ee9c;
     font-weight: bold;
+}
+nav ul li a:hover {
+    background-color: #dce775;
+}
+
+.sidenav li a[selected] {
+    font-weight: bold;
+    background-color: #e6ee9c;
 }
