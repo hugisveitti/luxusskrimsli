@@ -1,5 +1,5 @@
 const footer = `
-        <footer  class="page-footer">
+        <footer class="page-footer">
             <span>Listahópurinn smyrsl</span>
             <br />
             <span>
@@ -13,4 +13,4 @@ const footer = `
             <br />
             <span>2020</span>
         </footer>
-`
+`;

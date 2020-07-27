@@ -1,34 +1,27 @@
 const headerOptions = {
-    LUXUS: 'luxusskrimsli',
-    FERLID: 'ferlid',
-    UPPRUNASAGA: 'upprunasaga',
-    UMSMYRSL: 'umsmyrsl',
-}
+  LUXUS: "luxusskrimsli",
+  FERLID: "ferlid",
+  UPPRUNASAGA: "upprunasaga",
+  UMSMYRSL: "umsmyrsl",
+};
 
-const header = (selected) => {
-    const luxusSkrimsliATag =
-        selected === headerOptions.LUXUS
-            ? '<a selected>Lúxusskrímslið</a>'
-            : "<a href='./index.html'>Lúxusskrímslið</a>"
+const navOption = "nav-option";
 
-    const ferlidATag =
-        selected === headerOptions.FERLID
-            ? '<a selected>Ferlið & myndir</a>'
-            : '<a href="./ferlid.html">Ferlið & myndir</a>'
+const selectedNav = "selected-nav";
 
-    const upprunasagaATag =
-        selected === headerOptions.UPPRUNASAGA
-            ? '<a selected>Upprunasaga</a>'
-            : '<a href="./upprunasaga.html">Upprunasaga</a>'
+const header = () => {
+  const luxusSkrimsliATag = `<a class='${headerOptions.LUXUS}-a-tag ${navOption}'>Lúxusskrímslið</a>`;
 
-    const umsmyrslATag =
-        selected === headerOptions.UMSMYRSL
-            ? '<a selected>Um Smyrsl</a>'
-            : '<a href="./umsmyrsl.html">Um Smyrsl</a>'
+  const ferlidATag = `<a class="${headerOptions.FERLID}-a-tag ${navOption}">Ferlið & myndir</a>`;
 
-    return `<header id="header">
+  const upprunasagaATag = `<a class="${headerOptions.UPPRUNASAGA}-a-tag ${navOption}">Upprunasaga</a>`;
+
+  const umsmyrslATag = `<a class="${headerOptions.UMSMYRSL}-a-tag ${navOption}">Um Smyrsl</a>`;
+
+  return `<header id="header">
         <nav>
             <div class="nav-wrapper">
+            <img src="myndir/hringur.png" class="navbar-hringur" /> 
                 <a href="" data-target="mobile-demo" class="sidenav-trigger"
                     ><i class="material-icons">menu</i></a
                 >
@@ -38,9 +31,6 @@ const header = (selected) => {
                     </li>
                     <li>
                         ${ferlidATag}
-                    </li>
-                    <li>
-                       ${upprunasagaATag}
                     </li>
                     <li>
                         ${umsmyrslATag}
@@ -57,11 +47,8 @@ const header = (selected) => {
                 ${ferlidATag}
             </li>
             <li>
-                ${upprunasagaATag}
-            </li>
-            <li>
                 ${umsmyrslATag}
             </li>
         </ul>
-    </header>`
-}
+    </header>`;
+};
