@@ -6,8 +6,5 @@ const luxusImg = () => {
 
 const renderLuxusskrimsliContent = () => {
   return `
-  
-  <h5 class="center">Lúxusskrímslið</h5>
-  
       `;
 };

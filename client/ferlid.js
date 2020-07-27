@@ -33,9 +33,9 @@ const texti18 =
   "Kannski er hægt að hanna kastara sem varpar sporðinum á himininn til að bera út boðskap Lúxusskrímslisins.";
 const texti19 =
   "Eftir að allir hlutar voru orðnir vel slípaðir voru þeir límdir saman.";
-const texti20 = "Öryggi í fyrirrúmi, mikil bugun en gleði á sama tíma.";
-const texti21 = "Allt að verða tilbúið.";
-const texti22 = "Litur ákveðinn og límmiðar hannaðir af Andra Þór Arasyni.";
+//const texti20 = "Öryggi í fyrirrúmi, mikil bugun en gleði á sama tíma.";
+const texti20 = "Allt að verða tilbúið.";
+//const texti22 = "Litur ákveðinn og límmiðar hannaðir af Andra Þór Arasyni.";
 
 const createModal = (num) => {
   const myndaTexti = eval(`texti${num}`);
@@ -52,7 +52,7 @@ const createModal = (num) => {
 const renderFerlidContent = () => {
   let allImages = "";
 
-  for (let i = 1; i <= 22; i++) {
+  for (let i = 1; i <= 20; i++) {
     if ((i - 1) % 3 === 0) {
       allImages += '<div class="row" >';
     }

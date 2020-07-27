@@ -21,11 +21,20 @@ const umJokul = () => {
     `;
 };
 
+const smyrslImg = () => {
+  return `
+  
+  <img src="./myndir/smyrslboys.jpg" class="smyrsl-pic" />
+  
+  `;
+};
+
 const renderUmSmyrslContent = () => {
   return `
     <h5 class="">Um Smyrsl</h5>
     ${umSmyrlsTexti()}
     ${umHelga()}
     ${umJokul()}
+    ${smyrslImg()}
     `;
 };

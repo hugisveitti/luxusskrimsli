@@ -62,6 +62,15 @@ nav ul li a:hover {
   background-position: center center;
 }
 
+@media only screen and (min-width: 1000px) {
+  .blue-background {
+    background-image: url("myndir/background-stor.png");
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
 .modal-img {
   width: 100%;
 }
@@ -76,4 +85,8 @@ nav ul li a:hover {
   float: right;
   margin-right: 25px;
   margin-top: 2px;
+}
+
+.smyrsl-pic {
+  width: 70%;
 }
